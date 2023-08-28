@@ -22,9 +22,9 @@ const WhatsNew = () => (
       >
         <TypingText title="| What's New ?" />
         <TitleText title={<>What's new about Metaversus?</>} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-          {newFeatures.map((feature, index) => (
-            <NewFeatures key={feature} number={index + 1} text={feature} />
+        <div className="mt-[48px] flex flex-col flex-wrap justify-between gap-[24px]">
+          {newFeatures.map((feature) => (
+            <NewFeatures key={feature.title} {...feature} />
           ))}
         </div>
       </motion.div>
