@@ -1,12 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { exploreWorlds } from '../constants';
-import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText, TypingText } from '../components';
+import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { TitleText, TypingText, StartSteps } from '../components';
+import { startingFeatures } from '../constants';
 
 const GetStarted = () => (
   <section>
