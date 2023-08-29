@@ -13,9 +13,14 @@ const World = () => (
     initial="hidden"
     whileInView="show"
     viewport={{ once: 'false', amount: 0.25 }}
-    className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+    className={`${styles.innerWidth} mx-auto flex flex-col`}
   >
-    <TypingText title="| People on the World" />
+    <TypingText title="| People on the World" textStyles="text-center" />
+    <TitleText title={{ <>Track friends around you and invite them to play together in the same world </> }} textStyles="text-center" />
+    <motion.div
+      variant={fadeIn('up', 'tween', 0.3, 1)}
+      className="relative mt-[68px] flex w-full "
+    ></motion.div>
   </motion.div>
   </section>
 );
