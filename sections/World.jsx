@@ -16,11 +16,13 @@ const World = () => (
     className={`${styles.innerWidth} mx-auto flex flex-col`}
   >
     <TypingText title="| People on the World" textStyles="text-center" />
-    <TitleText title={{ <>Track friends around you and invite them to play together in the same world </> }} textStyles="text-center" />
+    <TitleText title={{<> Track friends around you and invite them to play together in the same world </> }} textStyles="text-center" />
     <motion.div
       variant={fadeIn('up', 'tween', 0.3, 1)}
-      className="relative mt-[68px] flex w-full "
-    ></motion.div>
+      className="relative mt-[68px] flex w-full h-[550px]"
+    >
+      <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+    </motion.div>
   </motion.div>
   </section>
 );
