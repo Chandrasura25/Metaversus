@@ -4,12 +4,18 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
-import { TitleText, TypingText, NewFeatures } from '../components';
-import { newFeatures } from '../constants';
+import { TitleText, TypingText, InsightCard } from '../components';
+import { insights } from '../constants';
 
 const Insights = () => (
-  <section>
-    Insights section
+  <section className={`${styles.paddings} relative z-10`}>
+  <motion.div
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    className={`${styles.innerWidth} mx-auto flex flex-col`}
+  ></motion.div>
   </section>
 );
 
