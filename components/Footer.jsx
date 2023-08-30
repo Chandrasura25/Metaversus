@@ -23,6 +23,12 @@ const Footer = () => (
           <span className="font-normal text-[16px] text-white">ENTER METAVERSE</span>
         </button>
       </div>
+
+      <div className="flex flex-col">
+        <div className="bg-white mb-[50px] h-[2px] opacity-10">
+          <div className=""></div>
+        </div>
+      </div>
     </div>
   </motion.footer>
 );
