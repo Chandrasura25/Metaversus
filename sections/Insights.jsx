@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { staggerContainer } from '../utils/motion';
 import { TitleText, TypingText, InsightCard } from '../components';
 import { insights } from '../constants';
 
